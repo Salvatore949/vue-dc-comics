@@ -10,8 +10,7 @@
 
 <script>
 export default {
-    nam: 'Main',
-        name: 'Navbar',
+    name: 'Main',
     data: () => ({
         chooseItem : [
             {
@@ -54,6 +53,14 @@ export default {
     color: #ffffff;
     
 }
+
+#topics{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 15px;
+}
+
 #topics > li{
     padding: 20px;
 }

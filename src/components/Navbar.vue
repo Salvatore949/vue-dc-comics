@@ -75,7 +75,7 @@ nav{
     height: 10vh;
 }
 
-ul{
+#container_link{
     display: flex;
     align-items: center;
     list-style-type: none;

@@ -3,6 +3,7 @@
     <Navbar />
     <Main />
     <Footer />
+    <Current />
 
     <div />
 
@@ -13,6 +14,7 @@
 import Navbar from './components/Navbar.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
+import Current from './components/Current.vue'
 
 
 
@@ -22,6 +24,7 @@ export default {
     Navbar,
     Main,
     Footer,
+    Current,
   },
   methods:{
 

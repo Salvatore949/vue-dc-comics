@@ -1,8 +1,7 @@
 <template>
   <header>
       <nav>
-          <img :src=" require('@/assets/logo.png') " alt="Logo">
-          <!-- <img :src=" require('@/assets/img/avatar_1.jpg') " alt="Logo"> -->
+          <img :src=" require('@/assets/img/dc-logo.png') " alt="Logo">
 
           <ul id="container_link">
                 <li class="link" v-for="link,i of links" :key="i">
@@ -77,9 +76,9 @@ nav{
 
 #container_link{
     display: flex;
-    align-items: center;
     list-style-type: none;
     font-size: 15px;
+    line-height:9vh;
 }
 
 a{
@@ -89,8 +88,7 @@ a{
 }
 
 nav > img{
-    display: flex;
-    align-items: center;
+margin-top: 10px;
 }
 
 #black{

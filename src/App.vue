@@ -2,8 +2,9 @@
   <div>
     <Navbar />
     <Main />
+    <Current />  
     <Footer />
-    <Current />
+  
 
     <div />
 
@@ -13,9 +14,8 @@
 <script>
 import Navbar from './components/Navbar.vue'
 import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
 import Current from './components/Current.vue'
-
+import Footer from './components/Footer.vue'
 
 
 export default {
@@ -23,8 +23,8 @@ export default {
   components: {
     Navbar,
     Main,
+    Current,    
     Footer,
-    Current,
   },
   methods:{
 

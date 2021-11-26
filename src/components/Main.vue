@@ -14,15 +14,15 @@ export default {
     data: () => ({
         chooseItem : [
             {
-                "img":"buy-comics-shop-locator.png",
+                "img":"buy-comics-digital-comics.png",
                 "paragraph":"DIGITAL COMICS"
             },
             {
-                "img":"buy-comics-merchandise.png",
+                "img":"buy-comics-shop-locator.png",
                 "paragraph":"DC MERCHANDISE"
             },
             {
-                "img":"buy-comics-shop-locator.png",
+                "img":"buy-comics-merchandise.png",
                 "paragraph":"SUBSCRIPTION"
             },
             {

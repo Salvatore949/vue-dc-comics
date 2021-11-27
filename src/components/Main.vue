@@ -2,7 +2,10 @@
 <main>
     <div id="container">
         <ul id="topics">
-            <li v-for="selection, i of chooseItem" :key="i">{{selection.paragraph}}</li>
+            <li v-for="selection, i in chooseItem" :key="i">
+                <img id="itemsNav" :src=" require('@/assets/img/' + selection.img)">
+                <p id=paragraph_selected>{{selection.paragraph}}</p>
+            </li>
         </ul>
     </div>
 </main>
@@ -18,11 +21,11 @@ export default {
                 "paragraph":"DIGITAL COMICS"
             },
             {
-                "img":"buy-comics-shop-locator.png",
+                "img":"buy-comics-merchandise.png",
                 "paragraph":"DC MERCHANDISE"
             },
             {
-                "img":"buy-comics-merchandise.png",
+                "img":"buy-comics-shop-locator.png",
                 "paragraph":"SUBSCRIPTION"
             },
             {
@@ -63,6 +66,19 @@ export default {
 
 #topics > li{
     padding: 20px;
+    display: flex;
+}
+
+#itemsNav{
+ margin-right:10px;
+ width: 60px;
+}
+
+#paragraph_selected{
+    font-size:10px;
+    display: flex;
+    align-items: center;
+
 }
 
 </style>

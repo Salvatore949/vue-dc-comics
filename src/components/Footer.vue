@@ -1,25 +1,38 @@
 <template>
     <footer>
     <div id="below_text" :src="'link'" :style="{'background-image': 'url(' + require('@/assets/img/footer-bg.jpg') + ')'}">
+
         <div id="footer_text">
             <ul id="texts">
-                <li v-for="paragraphs, i in list_options" :key="i">{{paragraphs.text}}</li>
+                <li v-for="paragraphs, i in list_options" :key="i">
+                  <b v-if="i === 0">{{paragraphs.text}}</b>
+                  <p v-else>{{paragraphs.text}}</p>  
+                </li>
             </ul>
             <ul id="texts_first">
-                <li v-for="paragraphs_1, i in shop" :key="i">{{paragraphs_1.text}}</li>
+                <li v-for="paragraphs_1, i in shop" :key="i">
+                 <b v-if="i === 0">{{paragraphs_1.text}}</b>
+                 <p v-else>{{paragraphs_1.text}}</p> 
+                </li>
             </ul>
         </div>  
         <ul id="texts_second">
-            <li v-for="paragraphs_2, i in DC_list" :key="i">{{paragraphs_2.text}}</li>
+            <li v-for="paragraphs_2, i in DC_list" :key="i">
+              <b v-if="i===0">{{paragraphs_2.text}}</b>
+              <p v-else>{{paragraphs_2.text}}</p>
+            </li>
         </ul>
         <ul id="texts_third">
-            <li v-for="paragraphs_3, i in Sites_list" :key="i">{{paragraphs_3.text}}</li>
+            <li v-for="paragraphs_3, i in Sites_list" :key="i">
+              <b v-if="i === 0">{{paragraphs_3.text}}</b>
+              <p v-else>{{paragraphs_3.text}}</p>
+              </li>
         </ul>
     </div>
     <div id="social">
       <button> SIGN UP NOW </button>
       <div>
-        <!-- <img v-for=" link, i in social_networks" :key="i" :src= alt=> -->
+        <img id="logos" v-for=" link, i in social_networks" :key="i" :src=" require('@/assets/img/' + link.logo )" >
       </div>
     </div>  
     </footer>
@@ -31,7 +44,7 @@ export default {
     data: () => ({
         list_options : [
             {
-              "text": "DC COMICS"
+              "text": "DC COMICS" 
             },
             {
               "text": "Characters"
@@ -170,6 +183,15 @@ export default {
     padding: 10px;
     padding-bottom: 30px;
  
+  }
+
+  #social{
+    height: 12vh;
+  }
+
+  #logos {
+    margin-top: 25px;
+    padding-left: 15px;
   }
 
 </style>

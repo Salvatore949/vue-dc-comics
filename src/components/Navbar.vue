@@ -22,43 +22,53 @@ export default {
         links: [
             {
                 link: "#",
-                text: "CHARACTERS"
+                text: "CHARACTERS",
+                img:"assets/img/buy-comics-digital-comics.png"
             },
             {
                 link: "#",
-                text: "COMICS"
+                text: "COMICS",
+                img:""
             },
             {
                 link: "#",
-                text: "MOVIES"
+                text: "MOVIES",
+                img:""
             },
             {
                 link: "#",
-                text: "TV"
+                text: "TV",
+                img:""
             },
             {
                 link: "#",
-                text: "GAMES"
+                text: "GAMES",
+                img:""
             },
             {
                 link: "#",
-                text: "COLLECTIBLES"
+                text: "COLLECTIBLES",
+                img:""
             },
             {
                 link: "#",
-                text: "VIDEOS"
+                text: "VIDEOS",
+                img:""
             },
             {
                 link: "#",
-                text: "FANS"
+                text: "FANS",
+                img:""
             },
             {
                 link: "#",
-                text: "NEWS"
+                text: "NEWS",
+                img:""
             },
             {
                 link: "#",
-                text: "SHOP"
+                text: "SHOP",
+                img:""
             }
             
         ]
